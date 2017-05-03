@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Pig Latin Translator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Pig Latin Translator</h1>
+
+      <form id="globalForm">
+        <div class="form-group">
+          <label for="phrase">Please enter a phrase to be translated:</label>
+          <input id="words" type="text">
+        </div>
+
+        <button type="submit" class="btn">Submit</button>
+      </form>
+
+      <div id="result">
+        <p><span class="words"></p>
+      </div>
+      <div id="hint">
+        <h3>hint:</h3>
+        <h4>For words beginning with a vowel, add "way" to the      end.
+
+          For words beginning with one or more consonants, move all of the first consecutive consonants to the end, and add "ay".
+
+          If the first consonants include "qu", move the "u" along with the "q". Don't forget about words like "squeal" where "qu" doesn't come first!
+
+          For words beginning with "y", treat "y" as a consonant.
+        </h4>
+      </div>
+    </div>
+  </body>
+</html>
