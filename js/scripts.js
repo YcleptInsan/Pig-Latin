@@ -18,7 +18,7 @@ function wordBuilder(splitWord, tempArray) {
   console.log("tempArray", tempArray);
     if (tempArray) {
       var suffix = "way"
-      var wordFinal = splitWord.join() + tempArray.join() + suffix;
+      var wordFinal = splitWord.join("") + suffix;
       console.log(wordFinal);
 
     }
@@ -54,6 +54,8 @@ function wordParse(userInput){
     if (splitWord[0] )
     i+=1;
     }
+
+          // var wordFinal = splitWord.join() + tempArray.join() + suffix;
   // return output
 };
 
